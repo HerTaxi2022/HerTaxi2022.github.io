@@ -1,0 +1,167 @@
+/* STYLES GUIDE:
+0. RESET
+1. LAYOUT
+2. GENERIC ITEMS
+3. PARTS OF THE WEB
+4. LIST
+5. FORM
+6. ANIMATIONS
+--------------------
+COLORS:
+
+*/
+
+/* 0 RESET */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* 1 LAYOUT */
+body{
+    text-align: center; font: 300 20px/1.7 'Cocon Regular'}
+    .header{display: flex; justify-content:left; align-items:center}
+	.navbar{display: flex; justify-content:left; align-items:center;}
+	.who{display: flex; align-items: center;}
+	.app {display: flex;}
+	.conteneitor{display: flex;justify-content:left;align-items:left;}
+	.list-services{display:flex; justify-content: center;align-items: center;}
+	.list-services li{padding:0 150px;}
+	
+/* 2 GENERIC ITEMS */
+    .header{height: 100vh; background: url(../img/Chicacarro.jpg) no-repeat center top; background-size: cover;}
+	.content{height: 100vh;background-color: white;}
+	.navbar {position: fixed;width: 10000px ;height: 63px; background: #ED84B4;}
+	.navbar a {color:#fff; padding: 0 50px; text-decoration: none;}
+	.app{height: 100vh;background:url(../img/fondo\ 2_Mesa\ de\ trabajo\ 1.png)no-repeat center top; background-size: cover;}
+	.contactanos{height: 100vh;background:url(../img/carretera.jpeg)no-repeat center top; background-size: cover;}
+	.pie-pagina{ width:100%;background-color: #EF826E;}
+	.pie-pagina .grupo1{
+		width: 100%;
+		max-width: 1200px;
+		margin: auto;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-gap: 50px;
+		padding: 45px 0px;
+	}
+	.pie-pagina .grupo1 .box figure{
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.pie-pagina a {
+		color:black;
+		text-decoration: none;
+		text-align: left;
+	}
+	
+	.pie-pagina .grupo1 .box figure img{
+		width: 250px;
+	}
+	form{
+		width: 800px;
+		height: 550px;
+		margin: auto;
+		background:#E9E9EA;
+		padding: 10px 20px;
+		box-sizing: border-box;
+		border-radius: 30px;
+	}
+	input{
+		width: 100%;
+		height: 40px;
+		box-sizing: border-box;
+		border-radius: 20px;
+		border-color: #ED84B4;
+		font-family: "Futura Book";
+	}
+	textarea{
+		width: 100%;
+		height: 40px;
+		box-sizing: border-box;
+		border-radius: 20px;
+		border-color: #ED84B4;
+		min-height: 100px;
+		max-height: 100px;
+		max-width: 100%;
+	}
+	#boton{
+		background-color: #ED84B4;
+		color: white;
+		width: 200px;
+	}
+	#boton:hover{
+		cursor:pointer;
+	}
+	
+/* 3 PARTS OF THE WEB*/
+section[id]{
+	scroll-margin-top:60px;
+}
+html{
+	scroll-behavior: smooth;
+}
+@font-face {
+	font-family: 'Cocon Regular';
+	src: url('../fonts/cocon-regular.otf') format('truetype');
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: 'Futura Book';
+	src: url('../fonts/Futura\ Book\ font.ttf') format('truetype');
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: 'Cocon Bold Condensed';
+	src: url('../fonts/cocon-boldcondensed.otf') format('truetype');
+	font-style: normal;
+	font-weight: normal;
+}
